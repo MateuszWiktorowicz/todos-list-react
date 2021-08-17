@@ -1,0 +1,18 @@
+.section {
+    padding: 5px 20px;
+    background-color: white;
+    margin: 10px 0 0 0;
+}
+
+
+.section__header {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-bottom: solid 1px  hsl(0, 0%, 93%);
+ 
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}

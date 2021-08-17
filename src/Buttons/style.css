@@ -1,0 +1,68 @@
+.buttons {
+    display: flex;
+   flex-wrap: wrap;
+   
+   
+}
+
+.buttons__button {
+    background: transparent;
+    color: teal;
+    border: none;
+    margin: 0 0 0 20px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.list__button--remove {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(0, 100%, 50%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.list__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+.list__button--remove:active {
+    background-color: hsl(0, 100%, 65%);
+}
+
+
+.list__button--done {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(120, 100%, 25%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.list__button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.list__button--done:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.list__button--undone {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    color: green;
+    cursor: pointer;
+}
+
+.list__button--undone:hover {
+    background-color: hsl(120, 100%, 30%);
+    color: hsl(120, 100%, 30%);
+}
+
+.list__button--undone:active {
+    background-color: hsl(120, 100%, 35%);
+    color: hsl(120, 100%, 35%);
+}
