@@ -34,6 +34,14 @@ const toggleTasksDone = (id) => {
     
   }) )
 };
+
+  const setAllDone = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+       done: true,
+      })));
+  };
+
   return (
     <main className="container">
       <h1>Lista zadań</h1>
@@ -43,6 +51,7 @@ const toggleTasksDone = (id) => {
       tasks={tasks} 
       hideDone={hideDone} 
       toggleHideDone={toggleHideDone} 
+      setAllDone={setAllDone}
       
       />
     } 
