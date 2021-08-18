@@ -15,6 +15,7 @@ const Buttons = (props) => {
             <button
                 className="buttons__button"
                 disabled ={props.tasks.every(({ done }) => done)}
+                
             >
                 Ukończ wszystkie
             </button>
