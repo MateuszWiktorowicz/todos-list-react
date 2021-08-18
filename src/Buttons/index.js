@@ -9,7 +9,7 @@ const Buttons = (props) => {
 
     return (
         <div className="buttons">
-            <button className=" buttons__button  ">
+            <button onClick={props.toggleHideDone} className=" buttons__button  ">
                 {props.hideDone ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button
