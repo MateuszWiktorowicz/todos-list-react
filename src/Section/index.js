@@ -1,12 +1,23 @@
-import "./style.css";
+import styled from "styled-components";
 
+const StyledSection = styled.section`
+   padding: 5px 20px;
+    background-color: white;
+    margin: 10px 0 0 0;
+`;
+
+const SectionHeader = styled.h2`
+  margin: 0 0 10px 0;
+    padding: 10px;
+    border-bottom: solid 1px  hsl(0, 0%, 93%);
+`;
 const Section = ({title, body}) => (
-    <section className="section">
+    <StyledSection>
         
-            <h2 className="section__header">{title}</h2>
+            <SectionHeader>{title}</SectionHeader>
             {body}
         
-    </section>
+    </StyledSection>
 )
 
 export default Section;
