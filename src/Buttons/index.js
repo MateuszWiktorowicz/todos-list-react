@@ -1,26 +1,27 @@
-import "./style.css";
 
-const Buttons = (props) => {
-    if (props.tasks.length === 0) {
+import { Div, Button } from "./styled";
+
+const Buttons = ({toggleHideDone, setAllDone, tasks, hideDone }) => {
+    if (tasks.length === 0) {
 
 
         return null
     }
 
     return (
-        <div className="buttons">
-            <button onClick={props.toggleHideDone} className=" buttons__button  ">
-                {props.hideDone ? "Pokaż" : "Ukryj"} ukończone
-            </button>
-            <button
-                className="buttons__button"
-                disabled ={props.tasks.every(({ done }) => done)}
-                onClick={() => props.setAllDone()}
+        <Div>
+            <Button onClick={toggleHideDone} >
+                {hideDone ? "Pokaż" : "Ukryj"} ukończone
+            </Button>
+            <Button
+               
+                disabled ={tasks.every(({ done }) => done)}
+                onClick={() => setAllDone()}
                 
             >
                 Ukończ wszystkie
-            </button>
-        </div>
+            </Button>
+        </Div>
     )
 };
 
